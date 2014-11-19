@@ -93,9 +93,9 @@ bassTwoVoice =
         \bassTwoVoice c, c |
 
         <<
-          \relative c { s8 f16 a s4 c16 a f a f d f d } \\
+          \relative c { r16 c8._~ c4_~ c2 } \\
           \relative c, { c2~ c } \\
-          \relative c { r16 c8._~ c4_~ c2 }
+          \relative c { s8 f16 a s4 c16 a f a f d f d }
         >> |
 
         <<
