@@ -5,7 +5,7 @@
   composer = "J.S. Bach"
 }
 
-trebVoiceOne = 
+trebVoiceOne =
 #(define-music-function
    (parser location a b c)
    (ly:pitch? ly:pitch? ly:pitch?)
@@ -16,7 +16,7 @@ trebVoiceOne =
 \relative c' { $a 16 $b $c }
 #})
 
-trebVoiceTwo = 
+trebVoiceTwo =
 #(define-music-function
    (parser location note)
    (ly:pitch?)
@@ -55,6 +55,29 @@ bassTwoVoice =
       % 9
       \trebVoiceOne e g c | \trebVoiceOne d fis c' |
       \trebVoiceOne d g b | \trebVoiceOne e g cis |
+
+      % 13
+      \trebVoiceOne d a' d | \trebVoiceOne d f b |
+      \trebVoiceOne c g' c | \trebVoiceOne a c f |
+
+      % 17
+      \trebVoiceOne a c f | \trebVoiceOne g b f' |
+      \trebVoiceOne g c e | \trebVoiceOne bes c e |
+
+      % 21
+      \trebVoiceOne a c e | \trebVoiceOne a c ees |
+      \trebVoiceOne b c ees | \trebVoiceOne b c d |
+
+      % 25
+      \trebVoiceOne g b d | \trebVoiceOne g c e |
+      \trebVoiceOne g c f | \trebVoiceOne g b f' |
+
+      % 29
+      \trebVoiceOne a c fis | \trebVoiceOne g c g' |
+      \trebVoiceOne g c f | \trebVoiceOne g b f' |
+
+      % 29
+      \trebVoiceOne g bes e |
     }
 
     \new Staff { \clef "bass"
@@ -77,19 +100,19 @@ bassTwoVoice =
         \bassTwoVoice d f | \bassTwoVoice g, d |
         \bassTwoVoice c e | \bassTwoVoice c g |
 
-        % 21 
+        % 21
         \bassTwoVoice f, f | \bassTwoVoice fis, c |
         \bassTwoVoice g, ees | \bassTwoVoice aes, f |
 
-        % 25 
+        % 25
         \bassTwoVoice g, f | \bassTwoVoice g, e |
         \bassTwoVoice g, d | \bassTwoVoice g, d |
 
-        % 29 
+        % 29
         \bassTwoVoice g, ees | \bassTwoVoice g, e |
         \bassTwoVoice g, d | \bassTwoVoice g, d |
 
-        % 33 
+        % 33
         \bassTwoVoice c, c |
 
         <<
