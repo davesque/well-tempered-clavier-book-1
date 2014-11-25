@@ -76,8 +76,11 @@ bassTwoVoice =
       \trebVoiceOne a c fis | \trebVoiceOne g c g' |
       \trebVoiceOne g c f | \trebVoiceOne g b f' |
 
-      % 29
+      % 33
       \trebVoiceOne g bes e |
+      \relative c' { r8 s8 c16 f c a s2 } |
+      \relative c'' { r8 g16 b d f d b d b g b d, f e d } |
+      \relative c' { <e g c>1 } \bar "|."
     }
 
     \new Staff { \clef "bass"
